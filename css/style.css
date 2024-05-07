@@ -360,14 +360,37 @@ ul, ol {
     object-fit: cover;
     margin: -4rem auto auto;
   }
-  
-  
+
 
 .main-menu {
     background-color: #9558b2;
 }
 .main-menu .navbar .navbar-nav a.nav-link {
     color: #fff;
+}
+.main-menu .navbar .navbar-nav li.nav-item-dropdown {
+    display: inline-block;
+}
+.main-menu .navbar .navbar-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.main-menu .navbar .navbar-nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.main-menu .navbar .nav-item-dropdown:hover .dropdown-content {
+    display: block;
+}
+.main-menu .navbar .dropdown-content a:hover {
+    background-color: #f1f1f1;
 }
 
 .grey-menu {
@@ -619,9 +642,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sponsors { overflow: auto; padding: 20pt;}
-.sponsors_img_l1 { max-width: 350px; max-height: 200px; overflow: hidden; display: inline-block; }
-.sponsors_img_l2 { max-width: 300px; max-height: 80px; overflow: hidden; display: inline-block; }
+.sponsors_img_l1 { max-width: 300px; max-height: 90px; overflow: hidden; display: inline-block; }
+.sponsors_img_l2 { max-width: 225px; max-height: 60px; overflow: hidden; display: inline-block; }
 .sponsors_img_l3 { max-width: 150px; max-height: 40px; overflow: hidden; display: inline-block; }
+.sponsors_img_l4 { max-width: 120px; max-height: 30px; overflow: hidden; display: inline-block; }
 
 @media screen and (max-width: 600px) {
     #waving-flag{
@@ -730,4 +754,15 @@ li p { margin: 0.2em; }
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.social-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-media-button {
+    margin: 16px;
 }
