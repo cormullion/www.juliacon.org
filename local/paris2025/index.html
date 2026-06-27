@@ -43,8 +43,12 @@
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   
-  <script defer data-domain="juliacon.org" src="https://plausible.io/js/script.js"></script>
-
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-9j9SPwP0Bo8B6W4m42tqx.js"></script>
+  <script>
+    window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+    plausible.init()
+  </script>
 </head>
 <body>
 
@@ -53,7 +57,7 @@
   <div class="container-fluid earlybird">
     <div class="container">
       <div class="alert">
-        Tickets available at <a href='https://pretix.eu/pydata/juliaconparis25/'>pretix.eu/pydata/juliaconparis25</a>
+        Check out the video recordings on our <a href='https://www.youtube.com/playlist?list=PLP8iPy9hna6TJMLEiZZiWAXlyGtOyJSL7'>YouTube playlist</a>
       </div>
     </div>
   </div>
@@ -66,10 +70,62 @@
     </a>
     
   </div>
-  <div class="u-futura u-uppercase previous-editions-menu" style="margin:auto; text-align:right">
+  <style>
+  /* Add subtle shadow and rounded corners */
+  .previous-editions-menu .dropdown-menu {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 6px;
+    padding: 0.25rem 0;
+    min-width: 180px;
+  }
+
+  /* Adjust header spacing and look */
+  .previous-editions-menu .dropdown-header {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #555;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    background-color: #f9f9f9;
+    margin-bottom: 0.25rem;
+  }
+
+  /* Links/items inside dropdown */
+  .previous-editions-menu .dropdown-menu a,
+  .previous-editions-menu .dropdown-menu .dropdown-item {
+    padding: 0.2rem 0.75rem;   /* tighter spacing */
+    line-height: 1.0;          /* compact line height */
+    color: #333;
+    text-align: left;
+    margin: 0;
+    white-space: nowrap;       /* prevent line breaks in item text */
+  }
+
+  .previous-editions-menu .dropdown-menu a:hover,
+  .previous-editions-menu .dropdown-menu .dropdown-item:hover {
+    background-color: #f2f2f2;
+  }
+
+  .previous-editions-menu .btn-secondary.dropdown-toggle:hover {
+    background-color: #333;
+  }
+</style>
+<div class="u-futura u-uppercase previous-editions-menu" style="margin:auto; text-align:right;">
+<button class="btn btn-secondary" type="button"
+   aria-haspopup="false" aria-expanded="false" style="margin-right: 10px;">
+    <a href="/2026/" style="color: inherit; text-decoration: none;">Latest Edition</a>
+</button>
+<button class="btn btn-secondary dropdown-toggle" type="button" id="previousEditionsDropdown"
+  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Other Editions
+</button>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="previousEditionsDropdown">
+  <h6 class='dropdown-header'>Next</h6><a href="/2026/">2026</a>
+  <h6 class='dropdown-header'>Previously</h6><a href="/2025/">2025</a><br><a href="/2024/">2024</a><br><a href="/2023/">2023</a><br><a href="/2022/">2022</a><br><a href="/2021/">2021</a><br><a href="/2020/">2020</a><br><a href="/2019/">2019</a><br><a href="/2018/">2018</a><br><a href="/2017/">2017</a><br><a href="/2016/">2016</a><br><a href="/2015/">2015</a><br><a href="/2014/">2014</a>
   
-  <span style="padding-left: 10px">Previously: <a href="/2024/">2024</a>/<a href="/2023/">2023</a>/<a href="/2022/">2022</a>/<a href="/2021/">2021</a>/<a href="/2020/">2020</a>/<a href="/2019/">2019</a>/<a href="/2018/">2018</a>/<a href="/2017/">2017</a>/<a href="/2016/">2016</a>/<a href="/2015/">2015</a>/<a href="/2014/">2014</a></span>
-  
+</div>
+  </div>
 </div>
 
 </div>
@@ -114,7 +170,7 @@
             
           </li>
           <!-- Add custom entries to the navbar in the `config.md` file -->
-          <li class="nav-item"><a class="nav-link" href="/local/paris2025/venue">Venue</a></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/program">Program</a></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/cfp">Call for Proposals</a></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/tickets">Tickets</a></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/committee">Committee</a></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/sponsor">Sponsor</a></li><li class="nav-item-dropdown"><a class="nav-link" href="javascript:void(0)">Guidelines</a><div class="dropdown-content"><a href="/local/paris2025/coc">Code of Conduct</a></div></li>
+          <li class="nav-item"><a class="nav-link" href="https://pretalx.com/juliacon-local-paris-2025/schedule/">Schedule</a></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/keynotes">Keynotes</a></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/venue">Venue</a></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/tickets">Tickets</a></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/sponsor">Sponsor</a></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/jobs">Jobs</a></li><li class="nav-item-dropdown"><a class="nav-link" href="javascript:void(0)">Guidelines</a><div class="dropdown-content"><a href="/local/paris2025/coc">Code of Conduct</a><a href="/local/paris2025/accessibility">Accessibility</a></div></li><li class="nav-item"><a class="nav-link" href="/local/paris2025/committee">Committee</a></li><li class="nav-item"><a class="nav-link" href="https://www.youtube.com/playlist?list=PLP8iPy9hna6TJMLEiZZiWAXlyGtOyJSL7">Videos </a></li>
           <li class="nav-item">
             <a class="nav-link" href="https://proceedings.juliacon.org/">Proceedings</a>
           </li>
@@ -139,38 +195,59 @@
   </h1>
 </header>
 
-<div class="row row-section"><div class="col-12">Welcome to <strong>JuliaCon Local Paris 2025</strong>, the latest European conference for the Julia programming language community&#33; Meet fellow developers, researchers, and enthusiasts from around the globe to celebrate and explore the power and versatility of Julia.</div></div>
+<div class="row row-section"><div class="col-12"><p>Welcome to <strong>JuliaCon Local Paris 2025</strong>, the latest European conference for the Julia programming language community&#33; Meet fellow developers, researchers, and enthusiasts from around the globe to celebrate and explore the power and versatility of Julia.</p>
+<p>The conference will take place on Thursday October 2nd and Friday October 3rd, right after <a href="https://pydata.org/paris2025"><strong>PyData Paris 2025</strong></a>.</p></div></div>
 <br/>
 <div class="row row-section"><div class="col-12 col-md-6 text-center glance-card">
-<br> 
+<br>
 <h3 class="header">Passionate community</h3>
 <img class="animated-size" src="/assets/2024/img/whattoexpect/community.jpg">
 <br>
-<br>   
+<br>
    At JuliaCon Local, expect to be surrounded by passionate individuals from diverse backgrounds, united by their enthusiasm for programming. </div>
  <div class="col-12 col-md-6 text-center glance-card">
-<br> 
+<br>
 <h3 class="header">Technical talks</h3>
 <img class="animated-size" src="/assets/2024/img/whattoexpect/talks.jpg">
 <br>
-<br>   
+<br>
    Two days of plenaries, talks, tutorials, posters and hackathon sessions, accessible to Julia beginners and experts alike. </div>
  <div class="col-12 col-md-6 text-center glance-card">
-<br> 
+<br>
 <h3 class="header">Networking opportunities</h3>
 <img class="animated-size" src="/assets/2024/img/whattoexpect/networking.jpg">
 <br>
-<br>   
+<br>
    JuliaCon Local offers exceptional networking opportunities for professionals and enthusiasts alike. </div>
  <div class="col-12 col-md-6 text-center glance-card">
-<br> 
+<br>
 <h3 class="header">Iconic location</h3>
 <img class="animated-size" src="/assets/local/paris2025/img/paris-3296269.jpg">
 <br>
-<br>   
+<br>
    The conference will take place at the heart of Paris. Missed the Summer Olympics? Here&#39;s your opportunity&#33; </div>
 </div>
 <br/>
+<header class="row-section" id="program">
+  <h1>
+    <a style="color: " href="#program">Program</a>
+  </h1>
+</header>
+
+<p>JuliaCon Local Paris 2025 will feature:</p>
+<ul>
+<li><p>keynotes by inspiring scientists and developers</p>
+</li>
+<li><p>parallel tracks for talks and tutorials</p>
+</li>
+<li><p>poster sessions</p>
+</li>
+<li><p>a hackathon on Friday afternoon</p>
+</li>
+</ul>
+<div class="row row-section justify-content-md-center"><div class="col-12 col-md-6 text-center"><h2 class="btn" style="width: 100%; border-color: #9d253d;">
+    <a style="font-size: x-large; color: #9d253d; text-decoration: none;" href="https://pretalx.com/juliacon-local-paris-2025/schedule/">Check out the full schedule!</a>
+  </h2></div></div>
 <header class="row-section" id="keynote-speakers">
   <h1>
     <a style="color: " href="#keynote-speakers">Keynote Speakers</a>
@@ -184,8 +261,8 @@
       <img class="animated-size rounded-circle" src="/assets/local/paris2025/img/speakers/laura_grigori.png">
     </div>
     <div class="col-7 text-left">
-      <h5><a href="https://people.epfl.ch/laura.grigori">Laura Grigori</a></h5>
-      <span>Full Professor, <a href='https://www.epfl.ch/en/'>EPFL</a></span>
+      <h5><a href="/local/paris2025/keynotes/#randomization_for_solving_high-dimensional_problems_algorithms_and_software">Laura Grigori</a></h5>
+      <span>Randomization for solving high dimensional problems: algorithms and software</span>
     </div>
   </div>
   <br>
@@ -196,8 +273,8 @@
       <img class="animated-size rounded-circle" src="/assets/local/paris2025/img/speakers/ivet_galabova.jpg">
     </div>
     <div class="col-7 text-left">
-      <h5><a href="https://www.linkedin.com/in/ivet-galabova/">Ivet Galabova</a></h5>
-      <span>Development and Integration Manager, <a href='https://highs.dev/'>HiGHS</a></span>
+      <h5><a href="/local/paris2025/keynotes/#highs_the_story_so_far">Ivet Galabova</a></h5>
+      <span>HiGHS: The Story So Far</span>
     </div>
   </div>
   <br>
@@ -208,8 +285,8 @@
       <img class="animated-size rounded-circle" src="/assets/local/paris2025/img/speakers/tim_besard.jpg">
     </div>
     <div class="col-7 text-left">
-      <h5><a href="https://www.linkedin.com/in/tim-besard-6b766031/">Tim Besard</a></h5>
-      <span>Software engineer, <a href='https://juliahub.com/'>JuliaHub</a></span>
+      <h5><a href="/local/paris2025/keynotes/#kernels_without_borders_parallel_programming_with_kernelabstractionsjl">Tim Besard</a></h5>
+      <span>Kernels without borders: Parallel programming with KernelAbstractions.jl</span>
     </div>
   </div>
   <br>
@@ -271,6 +348,13 @@
   <div class="u-vskip-2"></div>
 </div>
 
+<div class="grid-item col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 mb-2">
+  <div class="content-box green-box">
+    <h2>Supporting our attendees</h2>
+   Financial support has been awarded on a case-by-case basis, in the form of diversity scholarships and speaker funding: see details at this <a href="https://cryptpad.fr/form/#/2/form/view/Y2zeHTUsbxBVJ9gAB4v8R3hP7FSEckHrub8aI5eVBTE/">grant application link</a> &#40;now closed&#41;.   </div>
+  <div class="u-vskip-2"></div>
+</div>
+
 
 <!-- END of CONTAINER + MASONRY -->
   </div>
@@ -291,6 +375,11 @@
   <img src="/assets/local/paris2025/img/sponsors/temple_capital.png" alt="Temple Capital"  class="sponsors_img_l1"/>
   </a>
 </div>
+ <div class="p-4">
+  <a href="https://codeglass.io/">
+  <img src="/assets/local/paris2025/img/sponsors/codeglass.png" alt="CodeGlass"  class="sponsors_img_l1"/>
+  </a>
+</div>
  </div>
 
 <h2 align="center">Gold sponsors</h2>
@@ -302,7 +391,12 @@
 </div>
  <div class="p-4">
   <a href="https://oneweb.net/">
-  <img src="/assets/local/paris2025/img/sponsors/eutelsat_oneweb.png" alt="Eutelsat OneWeb"  class="sponsors_img_l3"/>
+  <img src="/assets/local/paris2025/img/sponsors/eutelsat.png" alt="Eutelsat OneWeb"  class="sponsors_img_l3"/>
+  </a>
+</div>
+ <div class="p-4">
+  <a href="https://pumas.ai/">
+  <img src="/assets/local/paris2025/img/sponsors/pumasai.png" alt="Pumas AI"  class="sponsors_img_l3"/>
   </a>
 </div>
  </div>
@@ -311,42 +405,42 @@
 <div class="d-flex flex-wrap justify-content-center align-items-center" style="margin-bottom: 3ex">
  <div class="p-4">
   <a href="https://www.cnam.eu/site-en/">
-  <img src="/assets/local/paris2025/img/sponsors/cnam.png" alt="CNAM"  class="sponsors_img_l2"/>
+  <img src="/assets/local/paris2025/img/academic_partners/cnam.png" alt="CNAM"  class="sponsors_img_l2"/>
   </a>
 </div>
  <div class="p-4">
   <a href="https://www.inria.fr/en">
-  <img src="/assets/local/paris2025/img/sponsors/inria.png" alt="Inria"  class="sponsors_img_l2"/>
+  <img src="/assets/local/paris2025/img/academic_partners/inria.png" alt="Inria"  class="sponsors_img_l2"/>
   </a>
 </div>
  <div class="p-4">
   <a href="https://www.euro-online.org/web/pages/1/home">
-  <img src="/assets/local/paris2025/img/sponsors/euro.png" alt="EURO"  class="sponsors_img_l2"/>
+  <img src="/assets/local/paris2025/img/academic_partners/euro.png" alt="EURO"  class="sponsors_img_l2"/>
   </a>
 </div>
  <div class="p-4">
   <a href="http://smai.emath.fr/spip.php?article330&lang=fr">
-  <img src="/assets/local/paris2025/img/sponsors/smai.jpg" alt="SMAI-MODE"  class="sponsors_img_l2"/>
+  <img src="/assets/local/paris2025/img/academic_partners/smai.jpg" alt="SMAI-MODE"  class="sponsors_img_l2"/>
   </a>
 </div>
  <div class="p-4">
   <a href="https://calcul.math.cnrs.fr/">
-  <img src="/assets/local/paris2025/img/sponsors/groupe_calcul.png" alt="Groupe Calcul"  class="sponsors_img_l2"/>
+  <img src="/assets/local/paris2025/img/academic_partners/groupe_calcul.png" alt="Groupe Calcul"  class="sponsors_img_l2"/>
   </a>
 </div>
  <div class="p-4">
   <a href="http://gdrro.lip6.fr/">
-  <img src="/assets/local/paris2025/img/sponsors/gdr_rod.png" alt="GDR ROD"  class="sponsors_img_l2"/>
+  <img src="/assets/local/paris2025/img/academic_partners/gdr_rod.png" alt="GDR ROD"  class="sponsors_img_l2"/>
   </a>
 </div>
  <div class="p-4">
   <a href="https://roadef.org/">
-  <img src="/assets/local/paris2025/img/sponsors/roadef.png" alt="ROADEF"  class="sponsors_img_l2"/>
+  <img src="/assets/local/paris2025/img/academic_partners/roadef.png" alt="ROADEF"  class="sponsors_img_l2"/>
   </a>
 </div>
  <div class="p-4">
   <a href="https://rtte.math.cnrs.fr/">
-  <img src="/assets/local/paris2025/img/sponsors/rtte.png" alt="RT Terres et Énergies"  class="sponsors_img_l2"/>
+  <img src="/assets/local/paris2025/img/academic_partners/rtte.png" alt="RT Terres et Énergies"  class="sponsors_img_l2"/>
   </a>
 </div>
  </div>
@@ -371,7 +465,7 @@
 <!-- I tried to mess around and get the footer to stick to the bottom of the page but I failed - Logan -->
 <footer class="container-fluid" align="center" style="position: relative; bottom: 0; width: 100%;">
   <div class="container">
-    
+
     
 
     <div class="u-vskip"></div>
@@ -379,10 +473,12 @@
     <div class="container">
       <div class="u-body-extra-small" style="text-align: center;">
         <p>
-          &copy; 2014-2024 <a href="https://juliacon.org">JuliaCon.org</a> All rights reserved.
+          &copy; 2014-2026 <a href="https://juliacon.org">JuliaCon.org</a> All rights reserved.
           Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a> and the <a href="https://julialang.org">Julia programming language</a>.
-          <a href="https://github.com/JuliaCon/juliacon.github.io">Fork it on Github</a> or
-  open a <a href="https://github.com/JuliaCon/juliacon.github.io/issues">bug report</a>.
+          <a href="https://github.com/JuliaCon/juliacon.github.io">Fork it on Github</a> or open a <a href="https://github.com/JuliaCon/juliacon.github.io/issues">bug report</a>.
+        </p>
+        <p>
+          <a href="https://juliacon.org/imprint">Imprint</a>.
         </p>
       </div>
       
